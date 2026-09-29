@@ -1,0 +1,30 @@
+num = []
+while True:
+    try:
+        t = int(input("введите цифру 0-9:"))
+        if t == 0:
+            break
+        else:
+            num.append(t)
+    except ValueError:
+        continue
+
+# var 1
+print(num)
+sumer = sum(num)
+avr = sum(num) / len(num)
+
+print(sumer)
+print(avr)
+
+# var 2
+titi = 0
+cnt = 0
+
+for i in num:
+    titi += i
+
+cnt = len(num)
+
+average = titi / cnt
+print(titi, average)
