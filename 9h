@@ -1,0 +1,7 @@
+n = int(input("::"))
+val = 1
+while val**2 <= n:
+    ansver = val ** 2
+    print(ansver, val)
+    val += 1
+print(ansver)
